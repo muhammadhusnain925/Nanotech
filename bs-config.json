@@ -1,0 +1,15 @@
+{
+  "port": 3000,
+  "files": [
+    "index.html",
+    "Nanotech.css",
+    "nanotech.js",
+    "Modern-Login-master/**/*.{html,css,js}"
+  ],
+  "server": {
+    "baseDir": "./"
+  },
+  "notify": false,
+  "open": true,
+  "logLevel": "silent"
+}

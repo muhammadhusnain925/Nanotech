@@ -1,0 +1,25 @@
+{
+  "name": "nenotech",
+  "version": "1.0.0",
+  "description": "NenoTech Portfolio - Husnain's Full-Stack Developer Portfolio",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server",
+    "start": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["portfolio", "nenotech", "husnain", "web-developer"],
+  "author": "Husnain",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@fontsource/outfit": "^5.3.0",
+    "@fortawesome/fontawesome-free": "^6.4.2",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.11.3"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

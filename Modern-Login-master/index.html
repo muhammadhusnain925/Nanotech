@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NenoTech | Portal Login</title>
+    <!-- Font Awesome Icons (Local - Offline Ready) -->
+    <link rel="stylesheet" href="../vendor/fontawesome/css/all.min.css">
+    <!-- Local Font: Outfit (Offline Ready) -->
+    <link rel="stylesheet" href="../vendor/fonts/outfit/outfit.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Ambient Glow Accents -->
+    <div class="ambient-glow-1"></div>
+    <div class="ambient-glow-2"></div>
+
+    <!-- Header Bar with Back Link & Theme Toggle -->
+    <header class="auth-header">
+        <a href="../index.html" class="back-home-link" title="Return to NenoTech Portfolio">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Back to NenoTech</span>
+        </a>
+
+        <button id="themeToggle" class="theme-toggle-btn" type="button" aria-label="Toggle Theme" title="Switch Theme">
+            <i id="themeIcon" class="fa-solid fa-sun text-warning"></i>
+        </button>
+    </header>
+
+    <!-- Main Auth Card Container -->
+    <div class="container" id="container">
+
+        <!-- Mobile-Only Switcher Tabs -->
+        <div class="mobile-switcher" id="mobileSwitcher">
+            <button type="button" class="mobile-tab-btn active" id="mobileSignInTab">Log In</button>
+            <button type="button" class="mobile-tab-btn" id="mobileSignUpTab">Sign Up</button>
+        </div>
+
+        <!-- Sign Up Form Panel -->
+        <div class="form-container sign-up">
+            <form onsubmit="return false;">
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon" aria-label="Google"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" id="signupName" placeholder="Full Name" required>
+                <input type="email" id="signupEmail" placeholder="Email Address" required>
+                <input type="password" id="signupPassword" placeholder="Password" required minlength="6">
+                <p class="auth-error" id="signupError" hidden></p>
+                <button type="submit">Sign Up</button>
+                <p class="mobile-switch-text">Already have an account? <a href="#" id="mobileGoToSignIn">Log In</a></p>
+            </form>
+        </div>
+
+        <!-- Log In Form Panel -->
+        <div class="form-container sign-in">
+            <form onsubmit="return false;">
+                <h1>Log In</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon" aria-label="Google"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email password</span>
+                <input type="email" id="loginEmail" placeholder="Email Address" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <p class="auth-hint">Demo admin: husnain@nenotech.dev / NenoTech123</p>
+                <p class="auth-error" id="loginError" hidden></p>
+                <a href="#" class="forgot-link">Forgot Your Password?</a>
+                <button type="submit">Log In</button>
+                <p class="mobile-switch-text">Don't have an account? <a href="#" id="mobileGoToSignUp">Sign Up</a></p>
+            </form>
+        </div>
+
+        <!-- Desktop Sliding Overlay Container -->
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to access all NenoTech portal features</p>
+                    <button class="hidden" id="login">Log In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your credentials to explore our tech workspace</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

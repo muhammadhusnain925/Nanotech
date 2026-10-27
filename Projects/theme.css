@@ -1,0 +1,78 @@
+/* Light mode keeps the reference layout and changes only the surface palette. */
+[data-theme="light"] {
+    color: #19212a;
+    background: #f8f9fc;
+    color-scheme: light
+}
+
+[data-theme="light"] body {
+    background: #f8f9fc;
+    color: #19212a
+}
+
+[data-theme="light"] .calculator {
+    --key: #e7e8ec;
+    --operator: #d9dce2;
+    --scientific: #dde2f0;
+    --accent: #368d84;
+    --text: #19212a;
+    --muted: #69737d;
+    --glow: rgba(38, 154, 147, .42);
+    background: #f8f9fc
+}
+
+[data-theme="light"] .tool {
+    color: #505b65
+}
+
+[data-theme="light"] .tool:hover,
+[data-theme="light"] .tool.active {
+    color: #157c73
+}
+
+[data-theme="light"] .key:hover {
+    background: #d5d8df
+}
+
+[data-theme="light"] .key.operator:hover {
+    background: #c5cad4
+}
+
+[data-theme="light"] .key.scientific-key:hover {
+    background: #cbd3e7
+}
+
+[data-theme="light"] .key.equals {
+    color: #fff
+}
+
+[data-theme="light"] .key.equals:hover {
+    background: #287d74
+}
+
+[data-theme="light"] .key.clear {
+    color: #cb5c66
+}
+
+[data-theme="light"] .mode-label {
+    color: #0080ff
+}
+
+[data-theme="light"] .history-head {
+    border-color: #d6d9df
+}
+
+[data-theme="light"] .history-item {
+    border-color: #dfe1e5
+}
+
+[data-theme="light"] .history-head button,
+[data-theme="light"] .back-calculator {
+    color: #157c73
+}
+
+@media(min-width:850px) {
+    [data-theme="light"] .calculator {
+        border-color: #e3e5e9
+    }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090909">
+    <meta name="description" content="NenoTech calculator with scientific tools and built-in history.">
+    <title>Calculator | NenoTech</title>
+    <link rel="icon" href="../clipboard.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../vendor/fonts/outfit/outfit.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="calculator" id="calculator" aria-label="Calculator">
+        <header class="toolbar">
+            <button type="button" class="tool" id="history-toggle" aria-label="Show calculation history"
+                aria-expanded="false" aria-controls="history-panel" title="History"><svg viewBox="0 0 24 24"
+                    aria-hidden="true">
+                    <path d="M3.4 11.8a8.7 8.7 0 1 0 2.4-6M3.4 4v4.8h4.8M12 7.5v5l3.2 1.9" />
+                </svg><span class="history-indicator" id="history-indicator" hidden></span></button>
+            <div class="toolbar-right">
+                <button type="button" class="tool" id="theme-toggle" aria-label="Switch to light mode"
+                    aria-pressed="false" title="Switch to light mode"><span class="theme-icon" id="theme-icon"
+                        aria-hidden="true">☀</span></button>
+                <button type="button" class="tool" id="mode-scientific" aria-label="Turn on scientific mode"
+                    aria-pressed="false" title="Scientific mode"><svg viewBox="0 0 24 24" aria-hidden="true">
+                        <rect x="3" y="3" width="18" height="18" rx="2" />
+                        <path d="M7 9h4m-2-2v4m5 5h4m-4-3h4" />
+                    </svg></button>
+            </div>
+        </header>
+        <div class="display" aria-live="polite" aria-atomic="true"><span class="mode-label"
+                id="mode-label">STANDARD</span>
+            <div class="display-values">
+                <div class="expression" id="expression">&nbsp;</div>
+                <div class="result" id="result">0</div>
+            </div>
+        </div>
+        <div class="keys-wrap">
+            <div class="scientific-keys" id="scientific-keys" aria-label="Scientific functions" aria-hidden="true"
+                inert>
+                <button class="key scientific-key" type="button" data-action="sign" aria-label="Change sign">⇄</button>
+                <button class="key scientific-key" type="button" id="angle-toggle" data-action="angle"
+                    aria-label="Switch angle mode">Deg</button>
+                <button class="key scientific-key" type="button" data-scientific="sqrt"
+                    aria-label="Square root">√</button>
+                <button class="key scientific-key" type="button" data-scientific="abs"
+                    aria-label="Absolute value">|x|</button>
+                <button class="key scientific-key" type="button" data-scientific="sin">sin</button>
+                <button class="key scientific-key" type="button" data-scientific="cos">cos</button>
+                <button class="key scientific-key" type="button" data-scientific="tan">tan</button>
+                <button class="key scientific-key" type="button" data-scientific="pi" aria-label="Pi">π</button>
+                <button class="key scientific-key" type="button" data-scientific="ln">ln</button>
+                <button class="key scientific-key" type="button" data-scientific="log">log</button>
+                <button class="key scientific-key" type="button" data-scientific="inverse"
+                    aria-label="Reciprocal">1/x</button>
+                <button class="key scientific-key" type="button" data-scientific="e"
+                    aria-label="Euler's number">e</button>
+                <button class="key scientific-key" type="button" data-scientific="exp"
+                    aria-label="e to the x">eˣ</button>
+                <button class="key scientific-key" type="button" data-scientific="square"
+                    aria-label="Square">x²</button>
+                <button class="key scientific-key" type="button" data-operator="^" aria-label="Power">xʸ</button>
+                <button class="key scientific-key" type="button" data-scientific="factorial"
+                    aria-label="Factorial">n!</button>
+            </div>
+            <div class="keypad" aria-label="Calculator keys">
+                <button class="key clear" type="button" data-action="clear" aria-label="Clear all">C</button>
+                <button class="key clear" type="button" data-action="delete" aria-label="Delete last digit"><svg
+                        viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M9 4.5h11a1.5 1.5 0 0 1 1.5 1.5v12a1.5 1.5 0 0 1-1.5 1.5H9L2.5 12 9 4.5Z" />
+                        <path d="m12 9 5 6m0-6-5 6" />
+                    </svg></button>
+                <button class="key" type="button" data-action="percent" aria-label="Percent">%</button>
+                <button class="key operator" type="button" data-operator="/" aria-label="Divide">÷</button>
+                <button class="key" type="button" data-digit="7">7</button><button class="key" type="button"
+                    data-digit="8">8</button><button class="key" type="button" data-digit="9">9</button><button
+                    class="key operator" type="button" data-operator="*" aria-label="Multiply">×</button>
+                <button class="key" type="button" data-digit="4">4</button><button class="key" type="button"
+                    data-digit="5">5</button><button class="key" type="button" data-digit="6">6</button><button
+                    class="key operator" type="button" data-operator="-" aria-label="Subtract">−</button>
+                <button class="key" type="button" data-digit="1">1</button><button class="key" type="button"
+                    data-digit="2">2</button><button class="key" type="button" data-digit="3">3</button><button
+                    class="key operator" type="button" data-operator="+" aria-label="Add">+</button>
+                <button class="key" type="button" data-action="parentheses" aria-label="Open or close parentheses">(
+                    )</button><button class="key" type="button" data-digit="0">0</button><button class="key"
+                    type="button" data-action="decimal" aria-label="Decimal point">.</button><button class="key equals"
+                    type="button" data-action="equals" aria-label="Equals">=</button>
+            </div>
+        </div>
+        <section class="history-panel" id="history-panel" hidden aria-label="Calculation history">
+            <div class="history-head">
+                <h2>History</h2><button type="button" id="clear-history">Clear all</button>
+            </div>
+            <div class="history-scroll">
+                <div class="empty-history" id="empty-history">No calculations yet</div>
+                <ol class="history-list" id="history-list"></ol>
+            </div><button type="button" class="back-calculator" id="back-calculator">Back to calculator</button>
+        </section>
+    </main>
+</body>
+
+</html>

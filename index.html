@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Husnain - Full-Stack Web Developer & Tech Enthusiast. Crafting modern, high-performance web applications with clean code and intuitive UI.">
+  <meta name="keywords"
+    content="Husnain, NenoTech, Web Developer, Portfolio, Frontend Developer, Bootstrap, JavaScript">
+  <meta name="author" content="Husnain">
+  <title>Husnain | NenoTech Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="clipboard.ico">
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="vendor/bootstrap-icons/bootstrap-icons.min.css">
+
+  <!-- Outfit Font -->
+  <link rel="stylesheet" href="vendor/fonts/outfit/outfit.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="Nanotech.css">
+</head>
+
+<body>
+
+  <!-- Ambient Background Glow Accents -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+  <div class="ambient-glow-3"></div>
+  <div class="ambient-glow-4"></div>
+
+  <!-- ==================== 1. NAVBAR ==================== -->
+  <header id="home">
+    <nav id="mainNav" class="navbar navbar-expand-lg glass-nav fixed-top py-2 py-lg-3" data-bs-theme="dark">
+      <div class="container d-flex align-items-center justify-content-between">
+        <!-- Brand Logo (Responsive: Text side on mobile, full logo on tablet/desktop) -->
+        <a class="navbar-brand d-flex align-items-center py-0 flex-shrink-0 me-2 me-lg-3" href="#home">
+          <img src="logo-text.png" alt="NANOTECH" class="navbar-logo navbar-logo-text d-inline-block d-md-none">
+          <img src="logo-cropped.png" alt="NANOTECH" class="navbar-logo navbar-logo-full d-none d-md-inline-block">
+        </a>
+
+        <!-- Desktop Navigation Links (Center, hidden on mobile) -->
+        <div class="desktop-nav-links d-none d-lg-flex mx-auto" id="navbarSupportedContent">
+          <ul class="navbar-nav d-flex flex-row gap-1 gap-xl-2 mb-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Side: Theme Toggle, Login Button & CTA (Never shrinking or overflowing) -->
+        <div class="nav-actions-wrap d-flex align-items-center gap-2 gap-sm-3 flex-shrink-0">
+          <button id="themeToggle" class="theme-toggle-btn flex-shrink-0" type="button" aria-label="Toggle Theme"
+            title="Switch Theme">
+            <i id="themeIcon" class="bi bi-sun-fill text-warning"></i>
+          </button>
+          <a href="Modern-Login-master/index.html" class="btn btn-outline-glass px-3 text-nowrap flex-shrink-0"
+            title="Login / Register">
+            <i class="bi bi-box-arrow-in-right me-1"></i>Login
+          </a>
+          <a href="#contact"
+            class="btn btn-gradient px-3 px-xl-4 text-nowrap flex-shrink-0 d-none d-sm-inline-flex">Hire Me</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==================== 2. HERO SECTION ==================== -->
+  <section id="hero" class="py-5 mt-5 d-flex align-items-center min-vh-100 position-relative">
+    <div class="container py-lg-5">
+      <div class="row align-items-center flex-column-reverse flex-lg-row g-5">
+
+        <!-- Left Side: Introduction & Bio -->
+        <div class="col-lg-7 text-center text-lg-start">
+          <!-- Availability Badge -->
+          <div class="mb-3">
+            <span class="glass-badge">
+              <span class="pulse-dot"></span>
+              Available for Freelance & Full-time Roles
+            </span>
+          </div>
+
+          <!-- Hero Headline -->
+          <h1 class="display-3 fw-bold mb-3">
+            Hi, I'm <span class="gradient-text">Husnain</span>
+          </h1>
+          <h2 class="h3 fw-semibold text-secondary mb-4" style="min-height: 2.4rem;">
+            I am a <span id="heroTypewriter" class="gradient-text fw-bold"></span><span
+              class="typewriter-cursor">|</span>
+          </h2>
+          <p class="lead opacity-75 mb-4 pe-lg-4" style="max-width: 580px;">
+            I engineer high-performance, responsive web applications with pixel-perfect designs, clean architecture, and
+            intuitive user experiences.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3 pt-2">
+            <a href="#projects" class="btn btn-gradient btn-lg px-4 magnetic-btn">
+              <i class="bi bi-rocket-takeoff-fill me-2"></i>View Projects
+            </a>
+            <a href="#contact" class="btn btn-outline-glass btn-lg px-4 magnetic-btn">
+              <i class="bi bi-envelope-fill me-2"></i>Contact Me
+            </a>
+            <a href="#skills" class="btn btn-outline-glass btn-lg px-3 magnetic-btn" title="View Skills">
+              <i class="bi bi-code-slash me-1"></i>Tech Stack
+            </a>
+          </div>
+
+          <!-- Social Quick Links -->
+          <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-3 mt-4 pt-3">
+            <span class="small text-muted fw-semibold">CONNECT:</span>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+              aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+              aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+              aria-label="Twitter">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Side: Animated Circular Profile Photo with Floating Badges -->
+        <div class="col-lg-5 text-center">
+          <div class="position-relative d-inline-block">
+            <!-- Floating Tech Badges -->
+            <div class="hero-badge-float badge-top-left">
+              <i class="bi bi-lightning-charge-fill text-warning me-1"></i> Fast & Responsive
+            </div>
+            <div class="hero-badge-float badge-bottom-right">
+              <i class="bi bi-check-circle-fill text-success me-1"></i> Clean Architecture
+            </div>
+
+            <!-- Profile Frame -->
+            <div class="d-inline-block p-2 rounded-circle animated-glow-border">
+              <img src="me2-crop.png" alt="Husnain - NenoTech Profile" class="rounded-circle img-fluid shadow-lg"
+                style="width: 290px; height: 290px; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 3. ABOUT ME SECTION ==================== -->
+  <section id="about" class="py-5">
+    <div class="container py-lg-4">
+      <div class="section-title-wrapper">
+        <span class="section-subtitle">Discover My Story</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <p class="section-desc">Passionate about turning complex digital problems into elegant, scalable solutions.</p>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+        <!-- Story Bio Card -->
+        <div class="col-lg-6">
+          <div class="glass-card p-4 p-md-5 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <h3 class="h4 fw-bold mb-3">
+                Crafting Modern Digital Experiences with Care & Precision
+              </h3>
+              <p class="text-secondary mb-3">
+                Hello! I am <strong>Husnain</strong>, the creator behind <strong>NenoTech</strong>. As a passionate web
+                developer, I specialize in building responsive front-ends, clean user interfaces, and robust web
+                applications that leave a lasting impression.
+              </p>
+              <p class="text-secondary mb-4">
+                Whether creating seamless component systems with Bootstrap and modern JavaScript, optimizing site
+                performance, or implementing state-of-the-art animations, I prioritize both clean code maintainability
+                and user delight.
+              </p>
+            </div>
+
+            <!-- Core Values Pills -->
+            <div class="pt-3 border-top border-secondary border-opacity-25">
+              <div class="row g-2">
+                <div class="col-6">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-patch-check-fill text-primary"></i>
+                    <span class="fw-semibold small">Clean & Modern Code</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-speedometer2 text-info"></i>
+                    <span class="fw-semibold small">Lightning Speed</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-phone-fill text-purple"></i>
+                    <span class="fw-semibold small">Mobile Responsive</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-shield-lock-fill text-success"></i>
+                    <span class="fw-semibold small">Security & Reliability</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience & Achievements Counters -->
+        <div class="col-lg-6">
+          <div class="row g-3 h-100">
+            <div class="col-sm-6">
+              <div class="glass-card stat-box h-100 d-flex flex-column justify-content-center">
+                <i class="bi bi-award-fill fs-2 text-primary mb-2"></i>
+                <div class="stat-number gradient-text">3+</div>
+                <div class="stat-label">Years of Development Experience</div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="glass-card stat-box h-100 d-flex flex-column justify-content-center">
+                <i class="bi bi-kanban-fill fs-2 text-cyan mb-2" style="color: var(--accent-cyan);"></i>
+                <div class="stat-number gradient-text">25+</div>
+                <div class="stat-label">Projects Completed & Delivered</div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="glass-card stat-box h-100 d-flex flex-column justify-content-center">
+                <i class="bi bi-emoji-smile-fill fs-2 text-warning mb-2"></i>
+                <div class="stat-number gradient-text">99%</div>
+                <div class="stat-label">Client Satisfaction Rate</div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="glass-card stat-box h-100 d-flex flex-column justify-content-center">
+                <i class="bi bi-clock-history fs-2 text-purple mb-2" style="color: var(--accent-purple);"></i>
+                <div class="stat-number gradient-text">24/7</div>
+                <div class="stat-label">Dedicated Agility & Support</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 4. SKILLS SECTION ==================== -->
+  <section id="skills" class="py-5">
+    <div class="container py-lg-4">
+      <div class="section-title-wrapper">
+        <span class="section-subtitle">Technical Expertise</span>
+        <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+        <p class="section-desc">My core toolbox for building reliable, cutting-edge digital experiences.</p>
+      </div>
+
+      <!-- Category Switcher Pills -->
+      <div class="skills-mobile-nav d-flex justify-content-center gap-2 mb-3 pb-1" id="skillsMobileTabs">
+        <button class="skill-tab-pill active" data-index="0">
+          <i class="bi bi-code-slash me-1"></i>Frontend
+        </button>
+        <button class="skill-tab-pill" data-index="1">
+          <i class="bi bi-window-fullscreen me-1"></i>UI/UX
+        </button>
+        <button class="skill-tab-pill" data-index="2">
+          <i class="bi bi-diagram-3 me-1"></i>APIs
+        </button>
+        <button class="skill-tab-pill" data-index="3">
+          <i class="bi bi-tools me-1"></i>Tools
+        </button>
+      </div>
+
+      <div class="row g-3 g-lg-4 skills-mobile-snap-row" id="skillsCardsRow">
+        <!-- 1. Frontend Core -->
+        <div class="col-md-6 col-xl-3 skill-col-item">
+          <div class="glass-card skill-bento-card h-100 p-3 p-lg-4">
+            <div class="d-flex align-items-center gap-3 mb-3 pb-2 border-bottom border-secondary border-opacity-25">
+              <div
+                class="skill-mini-icon text-primary bg-primary bg-opacity-10 border border-primary border-opacity-25">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <div>
+                <h3 class="h6 fw-bold mb-0">Frontend Core</h3>
+                <span class="text-muted" style="font-size: 0.75rem;">Architecture & Logic</span>
+              </div>
+            </div>
+
+            <div class="skill-mini-list">
+              <div class="skill-item-compact">
+                <div class="d-flex align-items-center justify-content-between mb-1">
+                  <span class="small fw-semibold"><i class="bi bi-filetype-html text-danger me-1"></i> HTML5
+                    Semantic</span>
+                  <span class="skill-level-pill">Expert</span>
+                </div>
+                <div class="skill-micro-desc">SEO structure, accessibility & clean DOM</div>
+              </div>
+
+              <div class="skill-item-compact">
+                <div class="d-flex align-items-center justify-content-between mb-1">
+                  <span class="small fw-semibold"><i class="bi bi-filetype-css text-primary me-1"></i> CSS3 &
+                    Layouts</span>
+                  <span class="skill-level-pill">Advanced</span>
+                </div>
+                <div class="skill-micro-desc">Flexbox, CSS Grid & Custom Variables</div>
+              </div>
+
+              <div class="skill-item-compact">
+                <div class="d-flex align-items-center justify-content-between mb-1">
+                  <span class="small fw-semibold"><i class="bi bi-filetype-js text-warning me-1"></i> JavaScript
+                    (ES6+)</span>
+                  <span class="skill-level-pill">Advanced</span>
+                </div>
+                <div class="skill-micro-desc">Async/Await, DOM manipulation, modular JS</div>
+              </div>
+
+              <div class="skill-item-compact">
+                <div class="d-flex align-items-center justify-content-between mb-1">
+                  <span class="small fw-semibold"><i class="bi bi-bootstrap-fill me-1" style="color: #a855f7;"></i>
+                    Bootstrap 5</span>
+                  <span class="skill-level-pill">Expert</span>
+                </div>
+                <div class="skill-micro-desc">Rapid grid, utilities & bespoke theming</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. UI/UX & Motion -->
+        <div class="col-md-6 col-xl-3 skill-col-item">
+          <div class="glass-card skill-bento-card h-100 p-3 p-lg-4">
+            <div class="d-flex align-items-center gap-3 mb-3 pb-2 border-bottom border-secondary border-opacity-25">
+              <div class="skill-mini-icon text-info bg-info bg-opacity-10 border border-info border-opacity-25">
+                <i class="bi bi-window-fullscreen"></i>
+              </div>
+              <div>
+                <h3 class="h6 fw-bold mb-0">UI/UX & Motion</h3>
+                <span class="text-muted" style="font-size: 0.75rem;">Visual & Interaction</span>
+              </div>
+            </div>
+
+            <div class="skill-mini-list">
+              <div class="skill-item-compact">
+                <div class="d-flex align-items-center justify-content-between mb-1">
+                  <span class="small fw-semibold"><i class="bi bi-phone me-1 text-info"></i> Responsive Design</span>
+                  <span class="skill-level-pill">Expert</span>
+                </div>
+                <div class="skill-micro-desc">Fluid mobile-first breakpoints across devices</div>
+              </div>
+
+              <div class="skill-item-compact">
+                <div class="d-flex align-items-center justify-content-between mb-1">
+                  <span class="small fw-semibold"><i class="bi bi-magic me-1 text-warning"></i>
+                    Micro-Interactions</span>
+                  <span class="skill-level-pill">Advanced</span>
+                </div>
+                <div class="skill-micro-desc">3D tilt, subtle magnetic buttons & keyframes</div>
+              </div>
+
+              <div class="skill-item-compact">
+                <div class="d-flex align-items-center justify-content-between mb-1">
+                  <span class="small fw-semibold"><i class="bi bi-palette me-1" style="color: #ec4899;"></i>
+                    Glassmorphism</span>
+                  <span class="skill-level-pill">Expert</span>
+                </div>
+                <div class="skill-micro-desc">Frosted backdrops, glowing borders & dark mode</div>
+              </div>
+
+              <div class="skill-item-compact">
+                <div class="d-flex align-items-center justify-content-between mb-1">
+                  <span class="small fw-semibold"><i class="bi bi-speedometer2 me-1 text-success"></i> Web
+                    Performance</span>
+                  <span class="skill-level-pill">90%+</span>
+                </div>
+                <div class="skill-micro-desc">Lighthouse optimization, lazy loading & zero CLS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. APIs & Architecture -->
+        <div class="col-md-6 col-xl-3 skill-col-item">
+          <div class="glass-card skill-bento-card h-100 p-3 p-lg-4">
+            <div class="d-flex align-items-center gap-3 mb-3 pb-2 border-bottom border-secondary border-opacity-25">
+              <div class="skill-mini-icon"
+                style="color: var(--accent-purple); background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.25);">
+                <i class="bi bi-diagram-3"></i>
+              </div>
+              <div>
+                <h3 class="h6 fw-bold mb-0">APIs & Architecture</h3>
+                <span class="text-muted" style="font-size: 0.75rem;">Data & Logic Flow</span>
+              </div>
+            </div>
+
+            <div class="skill-mini-list">
+              <div class="skill-item-compact">
+                <div class="d-flex align-items-center justify-content-between mb-1">
+                  <span class="small fw-semibold"><i class="bi bi-arrow-left-right me-1"
+                      style="color: var(--accent-purple);"></i> RESTful APIs</span>
+                  <span class="skill-level-pill">Advanced</span>
+                </div>
+                <div class="skill-micro-desc">Fetch API, asynchronous handling & error states</div>
+              </div>
+
+              <div class="skill-item-compact">
+                <div class="d-flex align-items-center justify-content-between mb-1">
+                  <span class="small fw-semibold"><i class="bi bi-database-check text-info me-1"></i> Client
+                    Storage</span>
+                  <span class="skill-level-pill">Proficient</span>
+                </div>
+                <div class="skill-micro-desc">LocalStorage, theme caching & session state</div>
+              </div>
+
+              <div class="skill-item-compact">
+                <div class="d-flex align-items-center justify-content-between mb-1">
+                  <span class="small fw-semibold"><i class="bi bi-braces text-warning me-1"></i> JSON Data
+                    Parsing</span>
+                  <span class="skill-level-pill">Advanced</span>
+                </div>
+                <div class="skill-micro-desc">Data structuring, object schemas & transformations</div>
+              </div>
+
+              <div class="skill-item-compact">
+                <div class="d-flex align-items-center justify-content-between mb-1">
+                  <span class="small fw-semibold"><i class="bi bi-shield-check text-success me-1"></i> Form
+                    Validation</span>
+                  <span class="skill-level-pill">Advanced</span>
+                </div>
+                <div class="skill-micro-desc">Interactive regex checks, sanitization & feedback</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Tools & Workflow -->
+        <div class="col-md-6 col-xl-3 skill-col-item">
+          <div class="glass-card skill-bento-card h-100 p-3 p-lg-4">
+            <div class="d-flex align-items-center gap-3 mb-3 pb-2 border-bottom border-secondary border-opacity-25">
+              <div
+                class="skill-mini-icon text-success bg-success bg-opacity-10 border border-success border-opacity-25">
+                <i class="bi bi-tools"></i>
+              </div>
+              <div>
+                <h3 class="h6 fw-bold mb-0">Tools & Workflow</h3>
+                <span class="text-muted" style="font-size: 0.75rem;">Modern Ecosystem</span>
+              </div>
+            </div>
+
+            <div class="skill-mini-list">
+              <div class="skill-item-compact">
+                <div class="d-flex align-items-center justify-content-between mb-1">
+                  <span class="small fw-semibold"><i class="bi bi-git text-danger me-1"></i> Git & GitHub</span>
+                  <span class="skill-level-pill">Advanced</span>
+                </div>
+                <div class="skill-micro-desc">Branching strategies, commits & PR workflows</div>
+              </div>
+
+              <div class="skill-item-compact">
+                <div class="d-flex align-items-center justify-content-between mb-1">
+                  <span class="small fw-semibold"><i class="bi bi-box-seam text-success me-1"></i> NPM Ecosystem</span>
+                  <span class="skill-level-pill">Advanced</span>
+                </div>
+                <div class="skill-micro-desc">Dependencies, scripts & local package bundling</div>
+              </div>
+
+              <div class="skill-item-compact">
+                <div class="d-flex align-items-center justify-content-between mb-1">
+                  <span class="small fw-semibold"><i class="bi bi-lightning-charge-fill text-warning me-1"></i> Dev
+                    Servers & HMR</span>
+                  <span class="skill-level-pill">Proficient</span>
+                </div>
+                <div class="skill-micro-desc">Lite-server, Vite workflows & live reload</div>
+              </div>
+
+              <div class="skill-item-compact">
+                <div class="d-flex align-items-center justify-content-between mb-1">
+                  <span class="small fw-semibold"><i class="bi bi-terminal text-info me-1"></i> Chrome DevTools</span>
+                  <span class="skill-level-pill">Expert</span>
+                </div>
+                <div class="skill-micro-desc">Network profiling, memory debugging & console logs</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider Controls & Pagination Indicators -->
+      <div class="skills-slider-controls d-flex justify-content-center align-items-center gap-3 mt-3">
+        <button class="skill-slider-nav-btn" id="skillSliderPrev" aria-label="Previous Category" title="Previous">
+          <i class="bi bi-chevron-left"></i>
+        </button>
+        <div class="d-flex align-items-center gap-2" id="skillsDots">
+          <span class="skill-dot active" data-index="0"></span>
+          <span class="skill-dot" data-index="1"></span>
+          <span class="skill-dot" data-index="2"></span>
+          <span class="skill-dot" data-index="3"></span>
+        </div>
+        <button class="skill-slider-nav-btn" id="skillSliderNext" aria-label="Next Category" title="Next">
+          <i class="bi bi-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 5. PROJECTS SECTION ==================== -->
+  <section id="projects" class="py-5">
+    <div class="container py-lg-4">
+      <div class="section-title-wrapper">
+        <span class="section-subtitle">Portfolio Showcase</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-desc">A selection of recent web applications, UI designs, and digital experiences.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="d-flex flex-wrap justify-content-center gap-2 mb-5">
+        <button class="project-filter-btn active" data-filter="all">All Projects</button>
+        <button class="project-filter-btn" data-filter="web-apps">Web Applications</button>
+        <button class="project-filter-btn" data-filter="frontend">Frontend & UI</button>
+        <button class="project-filter-btn" data-filter="interactive">Interactive Tools</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="row g-4" id="projectGrid">
+
+        <!-- Project 1: School Management System -->
+        <div class="col-md-6 col-lg-4 project-item" data-category="web-apps">
+          <div class="glass-card project-card">
+            <div class="project-img-wrapper">
+              <img src="sms-cover.jpg" alt="EduAxis School Management System" class="project-img">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-body">
+              <div class="mb-2">
+                <span class="tech-tag">React 19</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Vite</span>
+              </div>
+              <h3 class="h5 fw-bold mb-2">School Management System</h3>
+              <p class="text-secondary small mb-4 flex-grow-1">
+                A full school management workspace — students, staff, classes, attendance, exams, fees
+                and more — with live analytics and light/dark themes.
+              </p>
+              <div
+                class="d-flex align-items-center justify-content-between pt-2 border-top border-secondary border-opacity-25">
+                <button class="btn btn-sm btn-outline-glass" data-bs-toggle="modal" data-bs-target="#projectDetailModal"
+                  data-title="School Management System"
+                  data-desc="A complete school management workspace for students, staff, classes, sections, subjects, attendance, timetables, assignments, exams, marks, report cards, fee invoices, library, transport, events and targeted announcements — with dashboard KPIs and Recharts visualizations, CSV exports, light/dark/system themes and local-first persistence. Built with React 19, TypeScript, Vite and Tailwind CSS 4."
+                  data-img="sms-cover.jpg" data-tags="React 19, TypeScript, Vite, Tailwind CSS 4, Recharts"
+                  data-url="https://nanotech-sms.netlify.app/">
+                  <i class="bi bi-info-circle me-1"></i> Details
+                </button>
+                <div class="d-flex gap-2">
+                  <a href="https://nanotech-sms.netlify.app/" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-sm btn-gradient" title="Live Preview">
+                    <i class="bi bi-box-arrow-up-right me-1"></i> Live
+                  </a>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-sm btn-outline-glass" title="GitHub Code">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Restaurant Management System -->
+        <div class="col-md-6 col-lg-4 project-item" data-category="web-apps">
+          <div class="glass-card project-card">
+            <div class="project-img-wrapper">
+              <img src="rms-cover.jpg" alt="Restaurant Management System" class="project-img">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-body">
+              <div class="mb-2">
+                <span class="tech-tag">React 19</span>
+                <span class="tech-tag">Vite</span>
+                <span class="tech-tag">Tailwind 4</span>
+              </div>
+              <h3 class="h5 fw-bold mb-2">Restaurant Management System</h3>
+              <p class="text-secondary small mb-4 flex-grow-1">
+                A fast point-of-sale & management app — live POS cart, kitchen display, order flow,
+                menu CRUD and table billing.
+              </p>
+              <div
+                class="d-flex align-items-center justify-content-between pt-2 border-top border-secondary border-opacity-25">
+                <button class="btn btn-sm btn-outline-glass" data-bs-toggle="modal" data-bs-target="#projectDetailModal"
+                  data-title="Restaurant Management System"
+                  data-desc="A fast POS & management app with a live order cart (dine-in / takeaway with auto tax), a kitchen display board with per-status columns, order tracking from New to Paid, full menu & category CRUD, table occupancy with live bills, revenue dashboards and a rich seeded demo dataset that saves to your browser. Built with React 19, Vite and Tailwind CSS 4."
+                  data-img="rms-cover.jpg" data-tags="React 19, Vite, Tailwind CSS 4, POS" 
+                  data-url="https://nanotech-rms.netlify.app/">
+                  <i class="bi bi-info-circle me-1"></i> Details
+                </button>
+                <div class="d-flex gap-2">
+                  <a href="https://nanotech-rms.netlify.app/" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-sm btn-gradient" title="Live Preview">
+                    <i class="bi bi-box-arrow-up-right me-1"></i> Live
+                  </a>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-sm btn-outline-glass" title="GitHub Code">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+    </div>
+  </section>
+
+  <!-- ==================== 6. TESTIMONIALS SECTION ==================== -->
+  <section id="testimonials" class="py-5">
+    <div class="container py-lg-4">
+      <div class="section-title-wrapper">
+        <span class="section-subtitle">Client Endorsements</span>
+        <h2 class="section-title">What People <span class="gradient-text">Say</span></h2>
+        <p class="section-desc">Feedback from collaborators, managers, and clients I have had the pleasure to work with.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Testimonial 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="glass-card testimonial-card">
+            <div>
+              <div class="quote-icon"><i class="bi bi-quote"></i></div>
+              <div class="star-rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="text-secondary mb-4 fst-italic">
+                "Husnain transformed our outdated web interface into a sleek, lightning-fast digital storefront. His
+                attention to detail and responsiveness were outstanding."
+              </p>
+            </div>
+            <div class="d-flex align-items-center gap-3 pt-3 border-top border-secondary border-opacity-25">
+              <div class="client-avatar d-flex align-items-center justify-content-center bg-primary text-white fw-bold">
+                JD
+              </div>
+              <div>
+                <h4 class="h6 fw-bold mb-0">James Danvers</h4>
+                <span class="small text-muted">Product Director, TechVentures</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="glass-card testimonial-card">
+            <div>
+              <div class="quote-icon"><i class="bi bi-quote"></i></div>
+              <div class="star-rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="text-secondary mb-4 fst-italic">
+                "Working with NenoTech was effortless. Husnain understands modern web design trends deeply. The
+                glassmorphism and animated effects he crafted elevated our brand instantly!"
+              </p>
+            </div>
+            <div class="d-flex align-items-center gap-3 pt-3 border-top border-secondary border-opacity-25">
+              <div class="client-avatar d-flex align-items-center justify-content-center bg-info text-white fw-bold">
+                SK
+              </div>
+              <div>
+                <h4 class="h6 fw-bold mb-0">Sarah Khan</h4>
+                <span class="small text-muted">Lead Designer, StudioApex</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="col-md-12 col-lg-4">
+          <div class="glass-card testimonial-card">
+            <div>
+              <div class="quote-icon"><i class="bi bi-quote"></i></div>
+              <div class="star-rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="text-secondary mb-4 fst-italic">
+                "Clean code, exceptional communication, and timely delivery. Husnain solved complex layout problems
+                effortlessly. Highly recommended for any web project."
+              </p>
+            </div>
+            <div class="d-flex align-items-center gap-3 pt-3 border-top border-secondary border-opacity-25">
+              <div class="client-avatar d-flex align-items-center justify-content-center bg-purple text-white fw-bold"
+                style="background-color: var(--accent-purple);">
+                MR
+              </div>
+              <div>
+                <h4 class="h6 fw-bold mb-0">Michael Rodriguez</h4>
+                <span class="small text-muted">Founder & CTO, CloudFlow</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 7. CONTACT SECTION ==================== -->
+  <section id="contact" class="py-5">
+    <div class="container py-lg-4">
+      <div class="section-title-wrapper">
+        <span class="section-subtitle">Get In Touch</span>
+        <h2 class="section-title">Let's Build Something <span class="gradient-text">Amazing</span></h2>
+        <p class="section-desc">Have a project in mind, a question, or an exciting opportunity? Send me a message!</p>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+        <!-- Contact Information Cards -->
+        <div class="col-lg-5">
+          <div class="glass-card p-4 p-md-5 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <h3 class="h4 fw-bold mb-4">Contact Information</h3>
+              <p class="text-secondary mb-4">
+                I'm always open to discussing new web development projects, creative ideas, or opportunities to be part
+                of your vision.
+              </p>
+
+              <!-- Info Items -->
+              <div class="contact-info-card glass-card-static">
+                <div class="contact-icon-box">
+                  <i class="bi bi-envelope-at-fill"></i>
+                </div>
+                <div>
+                  <span class="small text-muted d-block">EMAIL ME</span>
+                  <a href="mailto:husnain@nenotech.dev" class="fw-semibold text-decoration-none text-reset">
+                    husnain@nenotech.dev
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-info-card glass-card-static">
+                <div class="contact-icon-box"
+                  style="color: var(--accent-cyan); background: rgba(6, 182, 212, 0.15); border-color: rgba(6, 182, 212, 0.3);">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <div>
+                  <span class="small text-muted d-block">LOCATION</span>
+                  <span class="fw-semibold">Available Worldwide / Remote</span>
+                </div>
+              </div>
+
+              <div class="contact-info-card glass-card-static">
+                <div class="contact-icon-box"
+                  style="color: var(--accent-purple); background: rgba(139, 92, 246, 0.15); border-color: rgba(139, 92, 246, 0.3);">
+                  <i class="bi bi-clock-fill"></i>
+                </div>
+                <div>
+                  <span class="small text-muted d-block">WORKING HOURS</span>
+                  <span class="fw-semibold">Mon – Fri: 9:00 AM – 6:00 PM</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Media Handles -->
+            <div class="pt-4 border-top border-secondary border-opacity-25 mt-4">
+              <span class="small text-muted fw-semibold d-block mb-3">FOLLOW ON SOCIAL MEDIA</span>
+              <div class="d-flex gap-2">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+                  aria-label="GitHub">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+                  aria-label="LinkedIn">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+                  aria-label="Twitter">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+                <a href="mailto:husnain@nenotech.dev" class="social-icon-btn" aria-label="Email">
+                  <i class="bi bi-envelope-fill"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-lg-7">
+          <div class="glass-card p-4 p-md-5 h-100">
+            <h3 class="h4 fw-bold mb-4">Send a Direct Message</h3>
+
+            <!-- Dynamic Feedback Alert -->
+            <div id="contactFormAlert" class="d-none" role="alert"></div>
+
+            <form id="contactForm" novalidate>
+              <div class="row g-3">
+                <!-- Name -->
+                <div class="col-md-6">
+                  <label for="contactName" class="form-label small fw-semibold">Your Name *</label>
+                  <input type="text" class="form-control form-control-glass" id="contactName"
+                    placeholder="e.g. John Doe" required>
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-6">
+                  <label for="contactEmail" class="form-label small fw-semibold">Your Email *</label>
+                  <input type="email" class="form-control form-control-glass" id="contactEmail"
+                    placeholder="e.g. john@example.com" required>
+                </div>
+
+                <!-- Subject -->
+                <div class="col-12">
+                  <label for="contactSubject" class="form-label small fw-semibold">Subject *</label>
+                  <input type="text" class="form-control form-control-glass" id="contactSubject"
+                    placeholder="e.g. New Web App Project Inquiry" required>
+                </div>
+
+                <!-- Message -->
+                <div class="col-12">
+                  <label for="contactMessage" class="form-label small fw-semibold">Message *</label>
+                  <textarea class="form-control form-control-glass" id="contactMessage" rows="5"
+                    placeholder="Tell me about your project goals, timeline, or questions..." required></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="col-12 pt-2">
+                  <button type="submit" class="btn btn-gradient btn-lg w-100">
+                    <i class="bi bi-send-fill me-2"></i>Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 8. FOOTER ==================== -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row g-4 justify-content-between mb-5">
+        <!-- Footer Brand -->
+        <div class="col-lg-5">
+          <a class="d-inline-flex align-items-center mb-3 text-decoration-none" href="#home">
+            <img src="logo-cropped.png" alt="NANOTECH" class="footer-logo">
+          </a>
+          <p class="text-secondary small pe-lg-5 mb-4">
+            Innovative web development and engineering solutions crafted by Husnain. Focusing on performance,
+            accessibility, and modern aesthetics.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+              aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+              aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+              aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-sm-6 col-lg-3">
+          <h5 class="h6 fw-bold text-uppercase mb-3" style="letter-spacing: 1px;">Navigation</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="#home" class="text-secondary text-decoration-none">Home</a></li>
+            <li class="mb-2"><a href="#about" class="text-secondary text-decoration-none">About Me</a></li>
+            <li class="mb-2"><a href="#skills" class="text-secondary text-decoration-none">Skills & Stack</a></li>
+            <li class="mb-2"><a href="#projects" class="text-secondary text-decoration-none">Featured Projects</a></li>
+            <li class="mb-2"><a href="#testimonials" class="text-secondary text-decoration-none">Client Reviews</a></li>
+            <li class="mb-0"><a href="#contact" class="text-secondary text-decoration-none">Contact Me</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter / Quick Note -->
+        <div class="col-sm-6 col-lg-4">
+          <h5 class="h6 fw-bold text-uppercase mb-3" style="letter-spacing: 1px;">Ready to collaborate?</h5>
+          <p class="text-secondary small mb-3">
+            I am currently open to new contract and full-time engineering projects. Let's create something extraordinary
+            together!
+          </p>
+          <a href="#contact" class="btn btn-sm btn-gradient px-4">
+            <i class="bi bi-chat-dots-fill me-2"></i>Start a Conversation
+          </a>
+        </div>
+      </div>
+
+      <!-- Copyright Bar -->
+      <div class="pt-4 border-top border-secondary border-opacity-25 text-center text-muted small">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+          <span>&copy; 2026 <strong>NenoTech</strong>. All Rights Reserved. Built with pride by
+            <strong>Husnain</strong>.</span>
+          <span>Designed with Bootstrap 5, Glassmorphism & Modern CSS.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== 9. PROJECT DETAIL MODAL ==================== -->
+  <div class="modal fade" id="projectDetailModal" tabindex="-1" aria-labelledby="modalProjectTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content glass-card border-0">
+        <div class="modal-header border-0 pb-0">
+          <h3 class="modal-title h5 fw-bold" id="modalProjectTitle">Project Details</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <img id="modalProjectImg" src="1.jpg" alt="Project Preview" class="img-fluid rounded-3 mb-4 shadow-sm w-100"
+            style="max-height: 380px; object-fit: cover;">
+          <div id="modalProjectTags" class="d-flex flex-wrap gap-1 mb-3"></div>
+          <p id="modalProjectDesc" class="text-secondary lead fs-6 mb-4"></p>
+          <div class="d-flex justify-content-end gap-2">
+            <button type="button" class="btn btn-outline-glass" data-bs-dismiss="modal">Close</button>
+            <a id="modalProjectLiveBtn" href="#" class="btn btn-gradient" target="_blank" rel="noopener noreferrer">
+              <i class="bi bi-box-arrow-up-right me-1"></i> Open Live Project
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button id="backToTop" type="button" aria-label="Back to Top" title="Back to Top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- ==================== MOBILE MAGIC INDICATOR BOTTOM NAV ==================== -->
+  <nav class="mobile-magic-nav d-lg-none" id="mobileMagicNav" aria-label="Mobile Navigation">
+    <div class="magic-nav-wrapper">
+      <ul class="magic-nav-list" id="magicNavList">
+        <!-- Floating Active Indicator with Curved Notches -->
+        <div class="magic-indicator" id="magicIndicator"></div>
+
+        <!-- 1. Home -->
+        <li class="magic-nav-item active" data-index="0" data-target="#home">
+          <a href="#home" class="magic-nav-link" aria-label="Home">
+            <span class="magic-nav-icon"><i class="bi bi-house-door-fill"></i></span>
+            <span class="magic-nav-text">Home</span>
+          </a>
+        </li>
+
+        <!-- 2. Skills -->
+        <li class="magic-nav-item" data-index="1" data-target="#skills">
+          <a href="#skills" class="magic-nav-link" aria-label="Skills">
+            <span class="magic-nav-icon"><i class="bi bi-cpu-fill"></i></span>
+            <span class="magic-nav-text">Skills</span>
+          </a>
+        </li>
+
+        <!-- 3. About -->
+        <li class="magic-nav-item" data-index="2" data-target="#about">
+          <a href="#about" class="magic-nav-link" aria-label="About">
+            <span class="magic-nav-icon"><i class="bi bi-person-fill"></i></span>
+            <span class="magic-nav-text">About</span>
+          </a>
+        </li>
+
+        <!-- 4. Projects -->
+        <li class="magic-nav-item" data-index="3" data-target="#projects">
+          <a href="#projects" class="magic-nav-link" aria-label="Projects">
+            <span class="magic-nav-icon"><i class="bi bi-grid-fill"></i></span>
+            <span class="magic-nav-text">Projects</span>
+          </a>
+        </li>
+
+        <!-- 5. Settings / Popup Menu -->
+        <li class="magic-nav-item" data-index="4" id="magicSettingsTrigger">
+          <button type="button" class="magic-nav-link border-0 bg-transparent" aria-label="Open Quick Menu"
+            aria-expanded="false" id="magicSettingsBtn">
+            <span class="magic-nav-icon"><i class="bi bi-gear-fill"></i></span>
+            <span class="magic-nav-text">Menu</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Backdrop overlay for Settings popup -->
+  <div class="magic-popup-backdrop" id="magicPopupBackdrop"></div>
+
+  <!-- Interactive Glassmorphic Action Popup Sheet -->
+  <div class="mobile-magic-popup" id="mobileMagicPopup" role="dialog" aria-modal="true" aria-label="Quick Settings">
+    <div class="magic-popup-header">
+      <div class="popup-drag-handle"></div>
+      <div class="d-flex align-items-center justify-content-between w-100 mt-2 mb-3">
+        <h3 class="h6 fw-bold mb-0 text-white d-flex align-items-center gap-2">
+          <i class="bi bi-sliders text-primary"></i> Quick Menu & Actions
+        </h3>
+        <button type="button" class="btn-close btn-close-white" id="closeMagicPopup" aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="magic-popup-body">
+      <!-- Quick Theme Switch Row -->
+      <div class="popup-item d-flex align-items-center justify-content-between p-3 rounded-3 mb-2">
+        <div class="d-flex align-items-center gap-3">
+          <i class="bi bi-circle-half text-warning fs-5"></i>
+          <div>
+            <div class="fw-semibold small">Theme Mode</div>
+            <div class="text-muted" style="font-size: 0.75rem;">Switch Dark / Light mode</div>
+          </div>
+        </div>
+        <button id="popupThemeToggle" class="btn btn-sm btn-outline-glass px-3 py-1">Toggle</button>
+      </div>
+
+      <!-- Portal Login Link -->
+      <a href="Modern-Login-master/index.html"
+        class="popup-item d-flex align-items-center justify-content-between p-3 rounded-3 mb-2 text-decoration-none text-reset">
+        <div class="d-flex align-items-center gap-3">
+          <i class="bi bi-shield-lock-fill text-info fs-5"></i>
+          <div>
+            <div class="fw-semibold small">Client Portal & Login</div>
+            <div class="text-muted" style="font-size: 0.75rem;">Access private workspace & auth</div>
+          </div>
+        </div>
+        <i class="bi bi-chevron-right text-muted"></i>
+      </a>
+
+      <!-- Skills / Tech Stack Shortcut -->
+      <a href="#skills"
+        class="popup-item d-flex align-items-center justify-content-between p-3 rounded-3 mb-2 text-decoration-none text-reset popup-nav-link">
+        <div class="d-flex align-items-center gap-3">
+          <i class="bi bi-code-slash text-purple fs-5"></i>
+          <div>
+            <div class="fw-semibold small">Technical Skills</div>
+            <div class="text-muted" style="font-size: 0.75rem;">Frontend, backend & design stack</div>
+          </div>
+        </div>
+        <i class="bi bi-chevron-right text-muted"></i>
+      </a>
+
+      <!-- Testimonials Shortcut -->
+      <a href="#testimonials"
+        class="popup-item d-flex align-items-center justify-content-between p-3 rounded-3 mb-3 text-decoration-none text-reset popup-nav-link">
+        <div class="d-flex align-items-center gap-3">
+          <i class="bi bi-chat-quote-fill text-success fs-5"></i>
+          <div>
+            <div class="fw-semibold small">Client Reviews</div>
+            <div class="text-muted" style="font-size: 0.75rem;">Testimonials and endorsements</div>
+          </div>
+        </div>
+        <i class="bi bi-chevron-right text-muted"></i>
+      </a>
+
+      <!-- Direct Hire Action -->
+      <div class="pt-1">
+        <a href="#contact" class="btn btn-gradient w-100 py-2 popup-nav-link">
+          <i class="bi bi-envelope-fill me-1"></i> Get in Touch / Hire Me
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== PROJECT DETAIL MODAL ==================== -->
+  <div class="modal fade" id="projectDetailModal" tabindex="-1" aria-labelledby="modalProjectTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content modal-content-glass">
+        <div class="modal-header modal-header-glass d-flex align-items-center justify-content-between">
+          <h5 class="modal-title fw-bold d-flex align-items-center gap-2" id="modalProjectTitle">
+            Project Showcase
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-glass">
+          <div class="modal-project-img-wrapper mb-4">
+            <img src="NenoTech.jpeg" id="modalProjectImg" alt="Project Preview" class="modal-project-img">
+          </div>
+          <div class="mb-3">
+            <h6 class="text-uppercase small fw-bold text-muted mb-2" style="letter-spacing: 0.5px;">Technologies Used
+            </h6>
+            <div id="modalProjectTags" class="d-flex flex-wrap gap-2">
+              <!-- Dynamically populated tags -->
+            </div>
+          </div>
+          <div class="mb-2">
+            <h6 class="text-uppercase small fw-bold text-muted mb-2" style="letter-spacing: 0.5px;">About This Project
+            </h6>
+            <p id="modalProjectDesc" class="text-secondary mb-0" style="line-height: 1.7;">
+              Detailed description of the project architecture and features.
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer modal-footer-glass d-flex justify-content-between">
+          <button type="button" class="btn btn-outline-glass px-4" data-bs-dismiss="modal">Close</button>
+          <div class="d-flex gap-2">
+            <a id="modalProjectLiveBtn" href="#" class="btn btn-gradient px-4" target="_blank"
+              rel="noopener noreferrer">
+              <i class="bi bi-box-arrow-up-right me-1"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JavaScript Bundle -->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom Interactive JavaScript -->
+  <script src="nanotech.js"></script>
+
+</body>
+
+</html>
